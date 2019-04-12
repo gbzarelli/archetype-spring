@@ -20,6 +20,9 @@
    </requiredProperty>
    ```
 
+## Sample of project created with this archetype
+<img src="https://github.com/gbzarelli/archetype-java-sample/blob/master/images/structure.png" width="256">
+
 Based of:
 
  - https://www.baeldung.com/maven-archetype
