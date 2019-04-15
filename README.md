@@ -23,7 +23,18 @@
 ## Sample of project created with this archetype
 ![](images/structure.png)
 
-Based of:
+## How to use
+
+ In IntelliJ:
+ - File -> New -> Project -> Maven -> (mark) Create from archetype -> Add Archetype
+ 
+![](images/add_archetype.png)
+ 
+ - Select the archetype and complete the creation.
+ 
+![](images/new_project.png)
+
+## Based of:
 
  - https://www.baeldung.com/maven-archetype
  - https://github.com/eugenp/tutorials/tree/master/maven-archetype
