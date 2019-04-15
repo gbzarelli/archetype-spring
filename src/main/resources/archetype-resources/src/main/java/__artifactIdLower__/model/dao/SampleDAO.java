@@ -1,4 +1,4 @@
-package ${package}.${artifactIdLower}.model.dao;
+package ${customPackage}.model.dao;
 
 public class SampleDAO {
 }

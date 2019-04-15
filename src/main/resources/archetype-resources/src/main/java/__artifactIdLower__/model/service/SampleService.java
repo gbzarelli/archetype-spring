@@ -1,4 +1,4 @@
-package ${package}.${artifactIdLower}.model.service;
+package ${customPackage}.model.service;
 
 public class SampleService {
 }

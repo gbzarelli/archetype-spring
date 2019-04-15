@@ -7,14 +7,17 @@
 
     <!-- Define custom tags -->
     <requiredProperties>
+        <requiredProperty key="artifactIdLower">
+            <defaultValue>${artifactId.toLowerCase()}</defaultValue>
+        </requiredProperty>
         <requiredProperty key="app-path">
             <defaultValue>resources</defaultValue>
         </requiredProperty>
         <requiredProperty key="greeting-msg">
             <defaultValue>Hi, I was generated from an archetype!</defaultValue>
         </requiredProperty>
-        <requiredProperty key="artifactIdLower">
-            <defaultValue>${artifactId.toLowerCase()}</defaultValue>
+        <requiredProperty key="customPackage">
+            <defaultValue>${groupId}.${artifactIdLower}</defaultValue>
         </requiredProperty>
     </requiredProperties>
 

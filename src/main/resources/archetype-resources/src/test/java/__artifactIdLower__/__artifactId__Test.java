@@ -1,4 +1,4 @@
-package ${package}.${artifactIdLower};
+package ${customPackage};
 
 public class ${artifactId}Test {
 }

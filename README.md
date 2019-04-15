@@ -21,7 +21,7 @@
    ```
 
 ## Sample of project created with this archetype
-<img src="https://github.com/gbzarelli/archetype-java-sample/blob/master/images/structure.png" width="256">
+![](images/structure.png)
 
 Based of:
 

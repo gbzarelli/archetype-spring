@@ -1,4 +1,4 @@
-package ${package}.${artifactIdLower}.model.entity;
+package ${customPackage}.model.entity;
 
 public class Sample {
 }

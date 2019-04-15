@@ -1,4 +1,4 @@
-package ${package}.${artifactIdLower}.domain;
+package ${customPackage}.domain;
 
 public class SampleDomain {
 }

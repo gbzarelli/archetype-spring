@@ -1,4 +1,4 @@
-package ${package}.${artifactIdLower}.dto;
+package ${customPackage}.dto;
 
 public class InputDTO {
 }

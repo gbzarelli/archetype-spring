@@ -1,4 +1,4 @@
-package ${package}.${artifactIdLower}.controller;
+package ${customPackage}.controller;
 
 public class SampleController {
 }

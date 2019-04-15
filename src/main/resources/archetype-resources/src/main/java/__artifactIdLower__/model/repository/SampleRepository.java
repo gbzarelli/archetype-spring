@@ -1,4 +1,4 @@
-package ${package}.${artifactIdLower}.model.repository;
+package ${customPackage}.model.repository;
 
 public class SampleRepository {
 }
