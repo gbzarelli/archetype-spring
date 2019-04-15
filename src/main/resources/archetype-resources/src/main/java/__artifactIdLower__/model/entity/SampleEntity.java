@@ -1,4 +1,4 @@
 package ${customPackage}.model.entity;
 
-public class Sample {
+public class SampleEntity {
 }
