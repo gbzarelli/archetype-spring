@@ -11,11 +11,17 @@
   - Simple Spring test for validate profiles and properties generated
   
 ## Sample of project created with this archetype
+
 ![](images/structure.png)
 
 ## How to use
 
  In IntelliJ:
+ 
+ - Open the archetype project and run maven install
+ 
+ ![](images/install.png)
+ 
  - File -> New -> Project -> Maven -> (mark) Create from archetype -> Add Archetype
  
 ![](images/add_archetype.png)
