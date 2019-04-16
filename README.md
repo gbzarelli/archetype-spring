@@ -1,4 +1,4 @@
-# Archetype Java Sample
+# Archetype Spring
 
  This Archetype creates:
  
