@@ -10,6 +10,9 @@
         <requiredProperty key="artifactIdLower">
             <defaultValue>${artifactId.toLowerCase()}</defaultValue>
         </requiredProperty>
+        <requiredProperty key="artifactIdForPackage">
+            <defaultValue>${artifactId.toLowerCase().replaceAll("-","_")}</defaultValue>
+        </requiredProperty>
         <requiredProperty key="app-path">
             <defaultValue>resources</defaultValue>
         </requiredProperty>
@@ -17,7 +20,7 @@
             <defaultValue>Hi, I was generated from an archetype!</defaultValue>
         </requiredProperty>
         <requiredProperty key="customPackage">
-            <defaultValue>${groupId}.${artifactIdLower}</defaultValue>
+            <defaultValue>${groupId}.${artifactIdForPackage}</defaultValue>
         </requiredProperty>
     </requiredProperties>
 
