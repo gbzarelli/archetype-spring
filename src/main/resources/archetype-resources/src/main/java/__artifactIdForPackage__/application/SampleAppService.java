@@ -1,4 +1,4 @@
-package ${customPackage}.domain;
+package ${customPackage}.application;
 
 import ${customPackage}.dto.InputDTO;
 import ${customPackage}.dto.OutputDTO;
@@ -14,18 +14,18 @@ import org.springframework.stereotype.Service;
  * Repository: http://californio.keynet.com.br:8089/java/archetype/archetype-spring
  */
 @Service
-public class SampleDomain {
+public class SampleAppService {
 
     private final SampleService sampleService;
 
     @Autowired
-    public SampleDomain(SampleService sampleService) {
+    public SampleAppService(SampleService sampleService) {
         this.sampleService = sampleService;
     }
 
     public OutputDTO process(InputDTO inputDTO) throws RegisterException, ValidateRegisterException {
             try {
-                //Here I can put my rules, and decide where my domain register the data, maybe I can use another service.
+                //Here I can put my rules, and decide where my application register the data, maybe I can use another service.
                 return registerSampleEntity(inputDTO);
             } catch (Exception throwable) {
                 throw throwable;

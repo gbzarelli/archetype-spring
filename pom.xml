@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.helpdev</groupId>
     <artifactId>archetype-spring</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>maven-archetype</packaging>
     <description>Archetype used to generate base of application</description>
 

@@ -1,6 +1,6 @@
 package ${customPackage}.controller;
 
-import ${customPackage}.domain.SampleDomain;
+import ${customPackage}.application.SampleAppService;
 import ${customPackage}.dto.InputDTO;
 import ${customPackage}.dto.OutputDTO;
 import ${customPackage}.exception.ValidateRegisterException;
@@ -36,7 +36,7 @@ class SampleControllerTest {
     private MockMvc mockMvc;
 
     @MockBean
-    private SampleDomain sampleDomain;
+    private SampleAppService sampleApp;
 
     @Autowired
     ObjectMapper objectMapper;
@@ -53,7 +53,7 @@ class SampleControllerTest {
     void test_post_method_with_success() throws Throwable {
         InputDTO inputDTO = new InputDTO(DEFAULT_NAME, DEFAULT_AGE);
         OutputDTO outputDTO = new OutputDTO(DEFAULT_ID_OUTPUT_DTO);
-        Mockito.when(sampleDomain.process(inputDTO)).thenReturn(outputDTO);
+        Mockito.when(sampleApp.process(inputDTO)).thenReturn(outputDTO);
         this.mockMvc.perform(post("/")
                 .accept(MediaType.APPLICATION_JSON_VALUE)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
@@ -65,7 +65,7 @@ class SampleControllerTest {
     @Test
     void test_bad_request_with_validate_register_exception() throws Throwable {
         InputDTO inputDTO = new InputDTO(DEFAULT_NAME, DEFAULT_AGE);
-        Mockito.when(sampleDomain.process(inputDTO)).thenThrow(new ValidateRegisterException(MESSAGE_VALIDATE_EXCEPTION));
+        Mockito.when(sampleApp.process(inputDTO)).thenThrow(new ValidateRegisterException(MESSAGE_VALIDATE_EXCEPTION));
         this.mockMvc.perform(post("/")
                 .accept(MediaType.APPLICATION_JSON_VALUE)
                 .contentType(MediaType.APPLICATION_JSON_VALUE)

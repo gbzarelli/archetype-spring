@@ -1,6 +1,6 @@
 package ${customPackage}.controller;
 
-import ${customPackage}.domain.SampleDomain;
+import ${customPackage}.application.SampleAppService;
 import ${customPackage}.dto.InputDTO;
 import ${customPackage}.dto.OutputDTO;
 import ${customPackage}.exception.RegisterException;
@@ -22,12 +22,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class SampleController {
 
     static final String HOME_MESSAGE = "Hello World";
-    // Controllers must have only domain; never model/service
-    private final SampleDomain sampleDomain;
+    // Controllers must have only application; never model/service
+    private final SampleAppService sampleApp;
 
     @Autowired
-    public SampleController(SampleDomain sampleDomain) {
-        this.sampleDomain = sampleDomain;
+    public SampleController(SampleAppService sampleApp) {
+        this.sampleApp = sampleApp;
     }
 
     @GetMapping(produces = MediaType.TEXT_PLAIN_VALUE)
@@ -37,7 +37,7 @@ public class SampleController {
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public OutputDTO postSample(@RequestBody InputDTO inputDTO) throws RegisterException, ValidateRegisterException {
-        return sampleDomain.process(inputDTO);
+        return sampleApp.process(inputDTO);
     }
 
 }
